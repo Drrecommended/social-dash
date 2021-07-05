@@ -1,87 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <h2 class="headline">Social Media Dashboard</h2>
+    <p class="dash">Total Followers: 23,004</p>
+    <hr />
+    <div class="theme-switch">
+      <p class="dash">Dark Mode</p>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <div class="big-card facebook card">
+      <div class="social-tag">
+        <img src="/images/icon-facebook.svg" alt="" />
+        <p>@nathanf</p>
+      </div>
+      <h1>1987</h1>
+      <p class="followers">Followers</p>
+      <p class="percentage green">12 Today</p>
+    </div>
 
-  Dark Mode
+    <div class="big-card twitter card">
+      <div class="social-tag">
+        <img src="/images/icon-twitter.svg" alt="" />
+        <p>@nathanf</p>
+      </div>
+      <h1>1044</h1>
+      <p class="followers">Followers</p>
+      <p class="percentage green">99 Today</p>
+    </div>
 
-  
+    <div class="big-card instagram card">
+      <div class="social-tag">
+        <img src="/images/icon-instagram.svg" alt="" />
+        <p>@realnathanf</p>
+      </div>
+      <h1>11k</h1>
+      <p class="followers">Followers</p>
+      <p class="percentage green">1099 Today</p>
+    </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <div class="big-card youtube card">
+      <div class="social-tag">
+        <img src="/images/icon-youtube.svg" alt="" />
+        <p>Nathan F.</p>
+      </div>
+      <h1>8239</h1>
+      <p class="followers">Followers</p>
+      <p class="percentage red">144 Today</p>
+    </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+    <!--smaller card section-->
+    <h3 class="overview">Overview - Today</h3>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    <div class="small-card card">
+      <div class="top container">
+        <p class="title">Page Views</p>
+        <img src="/images/icon-facebook.svg" alt="" />
+      </div>
+      <div class="bottom container">
+        <h2>87</h2>
+        <p class="percentage green">3%</p>
+      </div>
+    </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <div class="small-card card">
+      <div class="top container">
+        <p class="title">Likes</p>
+        <img src="/images/icon-facebook.svg" alt="" />
+      </div>
+      <div class="bottom container">
+        <h2>52</h2>
+        <p class="percentage red">2%</p>
+      </div>
+    </div>
 
+    <div class="small-card card">
+      <div class="top container">
+        <p class="title">Likes</p>
+        <img src="/images/icon-instagram.svg" alt="" />
+      </div>
+      <div class="bottom container">
+        <h2>5462</h2>
+        <p class="percentage green">2257%</p>
+      </div>
+    </div>
 
+    <div class="small-card card">
+      <div class="top container">
+        <p class="title">Profile Views</p>
+        <img src="/images/icon-instagram.svg" alt="" />
+      </div>
+      <div class="bottom container">
+        <h2>52K</h2>
+        <p class="percentage green">1375%</p>
+      </div>
+    </div>
 
-  Overview - Today
+    <div class="small-card card">
+      <div class="top container">
+        <p class="title">Retweets</p>
+        <img src="/images/icon-twitter.svg" alt="" />
+      </div>
+      <div class="bottom container">
+        <h2>117</h2>
+        <p class="percentage green">303%</p>
+      </div>
+    </div>
 
-  Page Views
-  87
-  3%
+    <div class="small-card card">
+      <div class="top container">
+        <p class="title">Likes</p>
+        <img src="/images/icon-twitter.svg" alt="" />
+      </div>
+      <div class="bottom container">
+        <h2>507</h2>
+        <p class="percentage green">553%</p>
+      </div>
+    </div>
 
-  Likes
-  52
-  2%
+    <div class="small-card card">
+      <div class="top container">
+        <p class="title">Likes</p>
+        <img src="/images/icon-youtube.svg" alt="" />
+      </div>
+      <div class="bottom container">
+        <h2>107</h2>
+        <p class="percentage red">19%</p>
+      </div>
+    </div>
 
-  Likes
-  5462
-  2257%
+    <div class="small-card card">
+      <div class="top container">
+        <p class="title">Total Views</p>
+        <img src="/images/icon-youtube.svg" alt="" />
+      </div>
+      <div class="bottom container">
+        <h2>1407</h2>
+        <p class="percentage red">12%</p>
+      </div>
+    </div>
 
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution" style="font-size: 10px;">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

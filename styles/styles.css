@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 1.5em;
+  color: #63687e;
+}
+
+.green {
+  color: #1db489;
+}
+
+.red {
+  color: #dc414c;
+}
+
+h1,
+h2 {
+  color: black;
+}
+
+.facebook {
+  background: linear-gradient(#198ff5 0 0) top/100% 4px no-repeat;
+}
+
+.twitter {
+  background: linear-gradient(#1ca0f2 0 0) top/100% 4px no-repeat;
+}
+
+.instagram {
+  background: linear-gradient(0.25turn, #fdc468, #df4996) top/100% 4px no-repeat;
+}
+
+.youtube {
+  background: linear-gradient(#c4032a 0 0) top/100% 4px no-repeat;
+}
+
+.overview {
+  padding: 1em 0 1em;
+}
+
+.headline {
+  font-size: 1.56rem;
+}
+
+.theme-switch {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8em 0;
+}
+
+.big-card {
+  text-align: center;
+  position: relative;
+}
+
+.big-card h1 {
+  font-size: 2.8rem;
+  padding-top: 0.4em;
+}
+
+.big-card .followers {
+  letter-spacing: 3px;
+}
+
+.big-card .percentage {
+  padding-top: 1.8em;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.card {
+  border-radius: 5px;
+  margin-bottom: 1.3em;
+  padding: 1.6em 1.5em 1.5em;
+  max-width: 330px;
+  background-color: #f0f2fa;
+}
+
+.dash {
+  font-weight: 700;
+  font-size: 0.94rem;
+  padding: 0.3em 0 1.4em 0;
+}
+
+.social-tag {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.social-tag p {
+  margin-left: 8px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.bottom {
+  padding-top: 1em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.container p {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+/* THEME SWITCH CSS */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2.5px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*# sourceMappingURL=styles.css.map */
