@@ -3,11 +3,30 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  transition: all 0.15s ease;
+}
+
+:root {
+  --color-page-background: white;
+  --color-page-top: #f5f7ff;
+  --card-color: #f0f2fa;
+  --font-color: #63687e;
+  --main-font-color: #1e202a;
+  --card-hover-color: hsl(227, 47%, 92%);
+}
+
+.dark {
+  --color-page-background: #1e202a;
+  --color-page-top: #f5f7ff;
+  --card-color: #252a41;
+  --font-color: #8b97c6;
+  --main-font-color: white;
+  --card-hover-color: hsl(228, 28%, 30%);
 }
 
 body {
   padding: 1.5em;
-  color: #63687e;
+  background-color: var(--color-page-background);
 }
 
 .green {
@@ -20,7 +39,15 @@ body {
 
 h1,
 h2 {
-  color: black;
+  color: var(--main-font-color);
+}
+
+h3 {
+  color: var(--font-color);
+}
+
+p {
+  color: var(--font-color);
 }
 
 .facebook {
@@ -78,7 +105,12 @@ h2 {
   margin-bottom: 1.3em;
   padding: 1.6em 1.5em 1.5em;
   max-width: 330px;
-  background-color: #f0f2fa;
+  background-color: var(--card-color);
+}
+
+.card:hover {
+  background-color: var(--card-hover-color);
+  cursor: pointer;
 }
 
 .dash {

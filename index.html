@@ -19,9 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap"
       rel="stylesheet"
     />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="/index.js" async></script>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
+
   <body>
     <h2 class="headline">Social Media Dashboard</h2>
     <p class="dash">Total Followers: 23,004</p>
@@ -29,7 +30,7 @@
     <div class="theme-switch">
       <p class="dash">Dark Mode</p>
       <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" name="mode" data-switch-dark/>
         <span class="slider round"></span>
       </label>
     </div>
@@ -165,7 +166,7 @@
       </div>
     </div>
 
-    <div class="attribution" style="font-size: 10px;">
+    <div class="attribution" style="font-size: 10px">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a

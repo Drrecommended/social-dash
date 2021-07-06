@@ -3,11 +3,46 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  transition: all 0.15s ease;
+}
+
+// Light Theme Variables
+$light-background: hsl(0, 0%, 100%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$light-grey-blue: hsl(227, 47%, 96%);
+$dark-grey-blue: hsl(228, 12%, 44%);
+$very-dark-blue: hsl(230, 17%, 14%);
+
+// Dark Theme Variables
+$very-dark-blue: hsl(230, 17%, 14%);
+$very-dark-blue-top: hsl(232, 19%, 15%);
+$dark-saturated-blue: hsl(228, 28%, 20%);
+$desaturated-blue: hsl(228, 34%, 66%);
+$white: hsl(0, 0%, 100%);
+
+//root for light mode
+:root {
+  --color-page-background: #{$light-background};
+  --color-page-top: #{$very-pale-blue};
+  --card-color: #{$light-grey-blue};
+  --font-color: #{$dark-grey-blue};
+  --main-font-color: #{$very-dark-blue};
+  --card-hover-color: hsl(227, 47%, 92%);
+}
+
+//dark mode
+.dark {
+  --color-page-background: #{$very-dark-blue};
+  --color-page-top: #{$very-pale-blue};
+  --card-color: #{$dark-saturated-blue};
+  --font-color: #{$desaturated-blue};
+  --main-font-color: #{$white};
+  --card-hover-color: hsl(228, 28%, 30%);
 }
 
 body {
   padding: 1.5em;
-  color: hsl(228, 12%, 44%);
+  background-color: var(--color-page-background);
 }
 
 .green {
@@ -20,7 +55,15 @@ body {
 
 h1,
 h2 {
-  color: black;
+  color: var(--main-font-color);
+}
+
+h3 {
+    color: var(--font-color);
+}
+
+p {
+  color: var(--font-color);
 }
 
 .facebook {
@@ -76,7 +119,11 @@ h2 {
   margin-bottom: 1.3em;
   padding: 1.6em 1.5em 1.5em;
   max-width: 330px;
-  background-color: hsl(227, 47%, 96%);
+  background-color: var(--card-color);
+  &:hover {
+    background-color: var(--card-hover-color);
+    cursor: pointer;
+  }
 }
 
 .dash {
