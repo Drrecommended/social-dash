@@ -17,7 +17,7 @@
 
 .dark {
   --color-page-background: #1e202a;
-  --color-page-top: #f5f7ff;
+  --color-page-top: #252837;
   --card-color: #252a41;
   --font-color: #8b97c6;
   --main-font-color: white;
@@ -25,8 +25,34 @@
 }
 
 body {
-  padding: 1.5em;
   background-color: var(--color-page-background);
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+.header {
+  background-color: var(--color-page-top);
+  padding: 2.5em 1.5em 2.5em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: -2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1210px;
 }
 
 .green {
@@ -68,6 +94,9 @@ p {
 
 .overview {
   padding: 1em 0 1em;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .headline {
@@ -102,9 +131,8 @@ p {
 
 .card {
   border-radius: 5px;
-  margin-bottom: 1.3em;
   padding: 1.6em 1.5em 1.5em;
-  max-width: 330px;
+  width: 280px;
   background-color: var(--card-color);
 }
 
@@ -151,8 +179,8 @@ p {
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 20px;
+  width: 42px;
+  height: 21px;
 }
 
 /* Hide default HTML checkbox */
@@ -177,16 +205,16 @@ p {
 .slider:before {
   position: absolute;
   content: "";
-  height: 14px;
-  width: 14px;
-  left: 2.5px;
-  bottom: 3px;
-  background-color: white;
+  height: 17px;
+  width: 17px;
+  right: 3px;
+  bottom: 2.85px;
+  background-color: var(--color-page-background);
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background: linear-gradient(45deg, #198ff5, #3eda82);
 }
 
 input:focus + .slider {
@@ -194,7 +222,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(20px);
+  transform: translateX(-19px);
 }
 
 /* Rounded sliders */
@@ -204,5 +232,9 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.attribution {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

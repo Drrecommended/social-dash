@@ -24,148 +24,151 @@
   </head>
 
   <body>
-    <h2 class="headline">Social Media Dashboard</h2>
-    <p class="dash">Total Followers: 23,004</p>
-    <hr />
-    <div class="theme-switch">
-      <p class="dash">Dark Mode</p>
-      <label class="switch">
-        <input type="checkbox" name="mode" data-switch-dark/>
-        <span class="slider round"></span>
-      </label>
-    </div>
+    <!-- Header -->
+    <section class="header">
+      <div class="header-content">
+        <h2 class="headline">Social Media Dashboard</h2>
+        <p class="dash">Total Followers: 23,004</p>
+        <hr />
+        <div class="theme-switch">
+          <p class="dash">Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" name="mode" data-switch-dark />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </section>
 
-    <div class="big-card facebook card">
-      <div class="social-tag">
-        <img src="/images/icon-facebook.svg" alt="" />
-        <p>@nathanf</p>
+    <!-- contiainer for big cards-->
+    <section class="content">
+      <div class="flex ">
+        <div class="big-card facebook card">
+          <div class="social-tag">
+            <img src="/images/icon-facebook.svg" alt="" />
+            <p>@nathanf</p>
+          </div>
+          <h1>1987</h1>
+          <p class="followers">Followers</p>
+          <p class="percentage green">12 Today</p>
+        </div>
+        <div class="big-card twitter card">
+          <div class="social-tag">
+            <img src="/images/icon-twitter.svg" alt="" />
+            <p>@nathanf</p>
+          </div>
+          <h1>1044</h1>
+          <p class="followers">Followers</p>
+          <p class="percentage green">99 Today</p>
+        </div>
+        <div class="big-card instagram card">
+          <div class="social-tag">
+            <img src="/images/icon-instagram.svg" alt="" />
+            <p>@realnathanf</p>
+          </div>
+          <h1>11k</h1>
+          <p class="followers">Followers</p>
+          <p class="percentage green">1099 Today</p>
+        </div>
+        <div class="big-card youtube card">
+          <div class="social-tag">
+            <img src="/images/icon-youtube.svg" alt="" />
+            <p>Nathan F.</p>
+          </div>
+          <h1>8239</h1>
+          <p class="followers">Followers</p>
+          <p class="percentage red">144 Today</p>
+        </div>
       </div>
-      <h1>1987</h1>
-      <p class="followers">Followers</p>
-      <p class="percentage green">12 Today</p>
-    </div>
 
-    <div class="big-card twitter card">
-      <div class="social-tag">
-        <img src="/images/icon-twitter.svg" alt="" />
-        <p>@nathanf</p>
-      </div>
-      <h1>1044</h1>
-      <p class="followers">Followers</p>
-      <p class="percentage green">99 Today</p>
-    </div>
+      <!--smaller card section-->
 
-    <div class="big-card instagram card">
-      <div class="social-tag">
-        <img src="/images/icon-instagram.svg" alt="" />
-        <p>@realnathanf</p>
-      </div>
-      <h1>11k</h1>
-      <p class="followers">Followers</p>
-      <p class="percentage green">1099 Today</p>
-    </div>
+      <h3 class="overview">Overview - Today</h3>
 
-    <div class="big-card youtube card">
-      <div class="social-tag">
-        <img src="/images/icon-youtube.svg" alt="" />
-        <p>Nathan F.</p>
+      <!--container for small cards-->
+      <div class="flex ">
+        <div class="small-card card">
+          <div class="top container">
+            <p class="title">Page Views</p>
+            <img src="/images/icon-facebook.svg" alt="" />
+          </div>
+          <div class="bottom container">
+            <h2>87</h2>
+            <p class="percentage green">3%</p>
+          </div>
+        </div>
+        <div class="small-card card">
+          <div class="top container">
+            <p class="title">Likes</p>
+            <img src="/images/icon-facebook.svg" alt="" />
+          </div>
+          <div class="bottom container">
+            <h2>52</h2>
+            <p class="percentage red">2%</p>
+          </div>
+        </div>
+        <div class="small-card card">
+          <div class="top container">
+            <p class="title">Likes</p>
+            <img src="/images/icon-instagram.svg" alt="" />
+          </div>
+          <div class="bottom container">
+            <h2>5462</h2>
+            <p class="percentage green">2257%</p>
+          </div>
+        </div>
+        <div class="small-card card">
+          <div class="top container">
+            <p class="title">Profile Views</p>
+            <img src="/images/icon-instagram.svg" alt="" />
+          </div>
+          <div class="bottom container">
+            <h2>52K</h2>
+            <p class="percentage green">1375%</p>
+          </div>
+        </div>
+        <div class="small-card card">
+          <div class="top container">
+            <p class="title">Retweets</p>
+            <img src="/images/icon-twitter.svg" alt="" />
+          </div>
+          <div class="bottom container">
+            <h2>117</h2>
+            <p class="percentage green">303%</p>
+          </div>
+        </div>
+        <div class="small-card card">
+          <div class="top container">
+            <p class="title">Likes</p>
+            <img src="/images/icon-twitter.svg" alt="" />
+          </div>
+          <div class="bottom container">
+            <h2>507</h2>
+            <p class="percentage green">553%</p>
+          </div>
+        </div>
+        <div class="small-card card">
+          <div class="top container">
+            <p class="title">Likes</p>
+            <img src="/images/icon-youtube.svg" alt="" />
+          </div>
+          <div class="bottom container">
+            <h2>107</h2>
+            <p class="percentage red">19%</p>
+          </div>
+        </div>
+        <div class="small-card card">
+          <div class="top container">
+            <p class="title">Total Views</p>
+            <img src="/images/icon-youtube.svg" alt="" />
+          </div>
+          <div class="bottom container">
+            <h2>1407</h2>
+            <p class="percentage red">12%</p>
+          </div>
+        </div>
       </div>
-      <h1>8239</h1>
-      <p class="followers">Followers</p>
-      <p class="percentage red">144 Today</p>
-    </div>
-
-    <!--smaller card section-->
-    <h3 class="overview">Overview - Today</h3>
-
-    <div class="small-card card">
-      <div class="top container">
-        <p class="title">Page Views</p>
-        <img src="/images/icon-facebook.svg" alt="" />
-      </div>
-      <div class="bottom container">
-        <h2>87</h2>
-        <p class="percentage green">3%</p>
-      </div>
-    </div>
-
-    <div class="small-card card">
-      <div class="top container">
-        <p class="title">Likes</p>
-        <img src="/images/icon-facebook.svg" alt="" />
-      </div>
-      <div class="bottom container">
-        <h2>52</h2>
-        <p class="percentage red">2%</p>
-      </div>
-    </div>
-
-    <div class="small-card card">
-      <div class="top container">
-        <p class="title">Likes</p>
-        <img src="/images/icon-instagram.svg" alt="" />
-      </div>
-      <div class="bottom container">
-        <h2>5462</h2>
-        <p class="percentage green">2257%</p>
-      </div>
-    </div>
-
-    <div class="small-card card">
-      <div class="top container">
-        <p class="title">Profile Views</p>
-        <img src="/images/icon-instagram.svg" alt="" />
-      </div>
-      <div class="bottom container">
-        <h2>52K</h2>
-        <p class="percentage green">1375%</p>
-      </div>
-    </div>
-
-    <div class="small-card card">
-      <div class="top container">
-        <p class="title">Retweets</p>
-        <img src="/images/icon-twitter.svg" alt="" />
-      </div>
-      <div class="bottom container">
-        <h2>117</h2>
-        <p class="percentage green">303%</p>
-      </div>
-    </div>
-
-    <div class="small-card card">
-      <div class="top container">
-        <p class="title">Likes</p>
-        <img src="/images/icon-twitter.svg" alt="" />
-      </div>
-      <div class="bottom container">
-        <h2>507</h2>
-        <p class="percentage green">553%</p>
-      </div>
-    </div>
-
-    <div class="small-card card">
-      <div class="top container">
-        <p class="title">Likes</p>
-        <img src="/images/icon-youtube.svg" alt="" />
-      </div>
-      <div class="bottom container">
-        <h2>107</h2>
-        <p class="percentage red">19%</p>
-      </div>
-    </div>
-
-    <div class="small-card card">
-      <div class="top container">
-        <p class="title">Total Views</p>
-        <img src="/images/icon-youtube.svg" alt="" />
-      </div>
-      <div class="bottom container">
-        <h2>1407</h2>
-        <p class="percentage red">12%</p>
-      </div>
-    </div>
-
+    </section>
     <div class="attribution" style="font-size: 10px">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
