@@ -25,24 +25,24 @@
 
   <body>
     <!-- Header -->
-    <section class="header">
-      <div class="header-content">
+    <header class="header">
+      <div class="main-container">
         <h2 class="headline">Social Media Dashboard</h2>
         <p class="dash">Total Followers: 23,004</p>
-        <hr />
+        <div class="line"></div>
         <div class="theme-switch">
-          <p class="dash">Dark Mode</p>
+          <p class="dark__mode">Dark Mode</p>
           <label class="switch">
             <input type="checkbox" name="mode" data-switch-dark />
             <span class="slider round"></span>
           </label>
         </div>
       </div>
-    </section>
+    </header>
 
     <!-- contiainer for big cards-->
-    <section class="content">
-      <div class="flex ">
+    <main class="content">
+      <div class="flex">
         <div class="big-card facebook card">
           <div class="social-tag">
             <img src="/images/icon-facebook.svg" alt="" />
@@ -76,17 +76,16 @@
             <p>Nathan F.</p>
           </div>
           <h1>8239</h1>
-          <p class="followers">Followers</p>
+          <p class="followers">Subscribers</p>
           <p class="percentage red">144 Today</p>
         </div>
       </div>
-
-      <!--smaller card section-->
-
-      <h3 class="overview">Overview - Today</h3>
-
-      <!--container for small cards-->
-      <div class="flex ">
+    </main>
+    <header class="sub-header">
+      <h3 class="main-container">Overview - Today</h3>
+    </header>
+    <section class="sub__content">
+      <div class="flex">
         <div class="small-card card">
           <div class="top container">
             <p class="title">Page Views</p>
@@ -104,7 +103,7 @@
           </div>
           <div class="bottom container">
             <h2>52</h2>
-            <p class="percentage red">2%</p>
+            <p class="percentage small_percent red">2%</p>
           </div>
         </div>
         <div class="small-card card">

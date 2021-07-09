@@ -29,6 +29,10 @@ body {
   min-height: 100vh;
 }
 
+hr {
+  border-top: 1px solid var(--font-color);
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -38,21 +42,37 @@ body {
 
 .header {
   background-color: var(--color-page-top);
-  padding: 2.5em 1.5em 2.5em;
+  padding: 2.5em 1.7em 3em;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.header-content {
-  max-width: 1200px;
+.sub-header {
+  padding: 2.5em 1.7em 2em;
+}
+
+.line {
+  content: " ";
+  border-bottom: 1.5px solid var(--font-color);
+}
+
+.main-container {
+  max-width: 1370px;
   margin: 0 auto;
 }
 
 .content {
-  margin-top: -2em;
+  margin-top: -3em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1210px;
+  max-width: 1400px;
+  padding-left: 0em;
+}
+
+.sub__content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
 }
 
 .green {
@@ -103,36 +123,9 @@ p {
   font-size: 1.56rem;
 }
 
-.theme-switch {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.8em 0;
-}
-
-.big-card {
-  text-align: center;
-  position: relative;
-}
-
-.big-card h1 {
-  font-size: 2.8rem;
-  padding-top: 0.4em;
-}
-
-.big-card .followers {
-  letter-spacing: 3px;
-}
-
-.big-card .percentage {
-  padding-top: 1.8em;
-  font-weight: 700;
-  font-size: 0.7rem;
-}
-
 .card {
   border-radius: 5px;
-  padding: 1.6em 1.5em 1.5em;
-  width: 280px;
+  width: 320px;
   background-color: var(--card-color);
 }
 
@@ -141,46 +134,92 @@ p {
   cursor: pointer;
 }
 
-.dash {
-  font-weight: 700;
-  font-size: 0.94rem;
-  padding: 0.3em 0 1.4em 0;
+.big-card {
+  text-align: center;
+  position: relative;
 }
 
-.social-tag {
+.big-card .social-tag {
+  padding-top: 2.2em;
   justify-content: center;
   display: flex;
   align-items: center;
 }
 
-.social-tag p {
+.big-card .social-tag p {
   margin-left: 8px;
   font-weight: 700;
   font-size: 0.7rem;
 }
 
-.bottom {
-  padding-top: 1em;
+.big-card h1 {
+  font-size: 3rem;
+  padding-top: 0.4em;
+  padding-bottom: 0.1em;
 }
 
-.container {
+.big-card .followers {
+  letter-spacing: 3px;
+  padding-bottom: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.big-card .percentage {
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding-bottom: 2.5em;
+}
+
+.small-card {
+  padding: 1.8em 1.5em 1.5em;
+}
+
+.small-card .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
-.container p {
+.small-card .container p {
   font-weight: 700;
   font-size: 0.7rem;
 }
 
+.small-card .bottom {
+  padding-top: 1.5em;
+}
+
+.small-card .bottom .small-percent {
+  display: inline;
+}
+
+.dash {
+  font-weight: 700;
+  font-size: 0.94rem;
+  padding: 0.7em 0 1.5em 0;
+}
+
 /* THEME SWITCH CSS */
+.theme-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0 2.8em;
+}
+
+.theme-switch .dark__mode {
+  font-weight: 700;
+  font-size: 0.94rem;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
   width: 42px;
-  height: 21px;
+  height: 24px;
 }
 
 /* Hide default HTML checkbox */
@@ -205,10 +244,10 @@ p {
 .slider:before {
   position: absolute;
   content: "";
-  height: 17px;
-  width: 17px;
+  height: 18px;
+  width: 18px;
   right: 3px;
-  bottom: 2.85px;
+  bottom: 3px;
   background-color: var(--color-page-background);
   transition: 0.4s;
 }
