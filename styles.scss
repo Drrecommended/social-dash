@@ -6,6 +6,8 @@
   transition: all 0.15s ease;
 }
 
+$green: hsl(163, 72%, 41%);
+
 // Light Theme Variables
 $light-background: hsl(0, 0%, 100%);
 $very-pale-blue: hsl(225, 100%, 98%);
@@ -105,7 +107,7 @@ h2 {
 }
 
 h3 {
-  color: var(--font-color);
+  color: var(--main-font-color);
 }
 
 p {
@@ -170,8 +172,8 @@ p {
     padding-bottom: 0.1em;
   }
   .followers {
-    letter-spacing: 3px;
-    padding-bottom: 2em;
+    letter-spacing: 4px;
+    padding-bottom: 1.6em;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 0.8rem;
@@ -179,12 +181,36 @@ p {
   .percentage {
     font-weight: 700;
     font-size: 0.7rem;
+    padding-top: 0.5em;
     padding-bottom: 2.5em;
+    // color: $green;
   }
 }
 
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 5px solid $green;
+  margin-right: 4px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 5px solid red;
+  margin-right: 4px;
+}
+
 .small-card {
-  padding: 1.8em 1.5em 1.5em;
+  padding: 1.5em 1.5em 1em;
   .container {
     display: flex;
     justify-content: space-between;
@@ -196,8 +222,19 @@ p {
   }
   .bottom {
     padding-top: 1.5em;
-    .small-percent {
-      display: inline;
+    .percentage {
+      font-weight: 700;
+      font-size: 0.7rem;
+      margin-top: 14px;
+      display: flex;
+      align-content: center;
+      // color: $green;
+      .arrow-down {
+        margin-top: 4px;
+      }
+      .arrow-up {
+        margin-top: 4px;
+      }
     }
   }
 }

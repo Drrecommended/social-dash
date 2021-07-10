@@ -89,7 +89,7 @@ h2 {
 }
 
 h3 {
-  color: var(--font-color);
+  color: var(--main-font-color);
 }
 
 p {
@@ -159,8 +159,8 @@ p {
 }
 
 .big-card .followers {
-  letter-spacing: 3px;
-  padding-bottom: 2em;
+  letter-spacing: 4px;
+  padding-bottom: 1.6em;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -169,11 +169,34 @@ p {
 .big-card .percentage {
   font-weight: 700;
   font-size: 0.7rem;
+  padding-top: 0.5em;
   padding-bottom: 2.5em;
 }
 
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 5px solid #1db489;
+  margin-right: 4px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 5px solid red;
+  margin-right: 4px;
+}
+
 .small-card {
-  padding: 1.8em 1.5em 1.5em;
+  padding: 1.5em 1.5em 1em;
 }
 
 .small-card .container {
@@ -191,8 +214,20 @@ p {
   padding-top: 1.5em;
 }
 
-.small-card .bottom .small-percent {
-  display: inline;
+.small-card .bottom .percentage {
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-top: 14px;
+  display: flex;
+  align-content: center;
+}
+
+.small-card .bottom .percentage .arrow-down {
+  margin-top: 4px;
+}
+
+.small-card .bottom .percentage .arrow-up {
+  margin-top: 4px;
 }
 
 .dash {
