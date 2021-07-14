@@ -29,6 +29,14 @@ body {
   min-height: 100vh;
 }
 
+main {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 hr {
   border-top: 1px solid var(--font-color);
 }
@@ -196,7 +204,7 @@ p {
 }
 
 .small-card {
-  padding: 1.5em 1.5em 1em;
+  padding: 1.5em 1.5em 1.5em;
 }
 
 .small-card .container {
@@ -313,6 +321,9 @@ input:checked + .slider:before {
 }
 
 @media only screen and (min-width: 700px) {
+  .header {
+    height: 30vh;
+  }
   .content {
     max-width: 1170px;
     background-color: blue;
@@ -322,7 +333,7 @@ input:checked + .slider:before {
   }
   .theme-switch {
     justify-content: flex-end;
-    margin-top: -70px;
+    margin-top: -90px;
   }
   .theme-switch .switch {
     margin-left: 1em;
@@ -345,6 +356,15 @@ input:checked + .slider:before {
   }
   .sub__header {
     background-color: yellow;
+  }
+  main {
+    margin-top: -105px;
+  }
+}
+
+@media only screen and (min-width: 1345px) {
+  main {
+    max-width: 1170px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
