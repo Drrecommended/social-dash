@@ -13,6 +13,7 @@
   --font-color: #63687e;
   --main-font-color: #1e202a;
   --card-hover-color: hsl(227, 47%, 92%);
+  --sub__header-color: #63687e;
 }
 
 .dark {
@@ -22,6 +23,23 @@
   --font-color: #8b97c6;
   --main-font-color: white;
   --card-hover-color: hsl(228, 28%, 30%);
+  --sub__header-color: white;
+}
+
+.facebook {
+  background: linear-gradient(#198ff5 0 0) top/100% 4px no-repeat;
+}
+
+.twitter {
+  background: linear-gradient(#1ca0f2 0 0) top/100% 4px no-repeat;
+}
+
+.instagram {
+  background: linear-gradient(0.25turn, #fdc468, #df4996) top/100% 4px no-repeat;
+}
+
+.youtube {
+  background: linear-gradient(#c4032a 0 0) top/100% 4px no-repeat;
 }
 
 body {
@@ -40,8 +58,9 @@ hr {
 }
 
 .header {
+  margin: auto;
   background-color: var(--color-page-top);
-  padding: 2.5em 1.7em 3em;
+  padding: 2.5em 1.5em 2.5em;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -52,20 +71,20 @@ hr {
 }
 
 .header-container {
-  max-width: 1370px;
-  background-color: pink;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+}
+
+.sub__header {
+  color: var(--sub__header-color);
+  padding: 1em 0;
 }
 
 .content {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0em;
-}
-
-.sub__content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1380px;
+  margin: -50px auto;
+  padding: 0 1.5em 3em;
+  max-width: 390px;
 }
 
 .green {
@@ -89,22 +108,6 @@ p {
   color: var(--font-color);
 }
 
-.facebook {
-  background: linear-gradient(#198ff5 0 0) top/100% 4px no-repeat;
-}
-
-.twitter {
-  background: linear-gradient(#1ca0f2 0 0) top/100% 4px no-repeat;
-}
-
-.instagram {
-  background: linear-gradient(0.25turn, #fdc468, #df4996) top/100% 4px no-repeat;
-}
-
-.youtube {
-  background: linear-gradient(#c4032a 0 0) top/100% 4px no-repeat;
-}
-
 .overview {
   padding: 1em 0 1em;
   width: 90%;
@@ -118,7 +121,7 @@ p {
 
 .card {
   border-radius: 5px;
-  width: 320px;
+  width: 340px;
   background-color: var(--card-color);
   margin-bottom: 25px;
 }
@@ -130,7 +133,6 @@ p {
 
 .big-card {
   text-align: center;
-  position: relative;
 }
 
 .big-card .social-tag {
@@ -211,7 +213,7 @@ p {
 .small-card .bottom .percentage {
   font-weight: 700;
   font-size: 0.7rem;
-  margin-top: 14px;
+  margin-top: 12px;
   display: flex;
   align-content: center;
 }
@@ -228,6 +230,16 @@ p {
   font-weight: 700;
   font-size: 0.94rem;
   padding: 0.7em 0 1.5em 0;
+}
+
+.attribution {
+  text-align: center;
+  padding-top: 100px;
+  color: var(--main-font-color);
+}
+
+.attribution a {
+  color: #198ff5;
 }
 
 /* THEME SWITCH CSS */
@@ -248,7 +260,7 @@ p {
   position: relative;
   display: inline-block;
   width: 42px;
-  height: 24px;
+  height: 22px;
 }
 
 /* Hide default HTML checkbox */
@@ -273,8 +285,8 @@ p {
 .slider:before {
   position: absolute;
   content: "";
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
   right: 3px;
   bottom: 3px;
   background-color: var(--color-page-background);
@@ -290,7 +302,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(-19px);
+  transform: translateX(-20px);
 }
 
 /* Rounded sliders */
@@ -302,55 +314,39 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.attribution {
-  text-align: center;
-}
-
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   .header {
-    height: 30vh;
+    height: 25vh;
+  }
+  .header .header-container {
+    max-width: 550px;
   }
   .content {
-    max-width: 1170px;
-    background-color: blue;
+    margin-top: -105px;
+    padding: 0;
+    max-width: 550px;
   }
   .content .card {
-    max-width: 270px;
+    width: 260px;
   }
   .theme-switch {
     justify-content: flex-end;
-    margin-top: -90px;
+    margin-top: -95px;
   }
   .theme-switch .switch {
     margin-left: 1em;
   }
-  .main-container {
-    max-width: 1170px;
-  }
-  body {
-    background-color: red;
-  }
-  .sub__content {
-    max-width: 1170px;
-    background-color: green;
-  }
-  .sub__content .card {
-    max-width: 270px;
-  }
   .line {
     display: none;
   }
-  .sub__header {
-    background-color: yellow;
-  }
-  main {
-    margin-top: -105px;
-  }
 }
 
-@media only screen and (min-width: 1345px) {
-  main {
-    max-width: 1170px;
+@media only screen and (min-width: 1300px) {
+  .content {
+    max-width: 1120px;
+  }
+  .header .header-container {
+    max-width: 1120px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
