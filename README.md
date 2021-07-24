@@ -15,7 +15,6 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -54,12 +53,12 @@ I would like to learn how to plus my own social media information into this proj
 
 ### Useful resources
 
-- [Example resource 1](https://courses.kevinpowell.co/conquering-responsive-layouts) - This helped me really get a grasp with responsive layouts. If anyone out there wants to upgrade their css knowledge I HIGHLY recommended this course. 
+- [Conquering responsive layouts](https://courses.kevinpowell.co/conquering-responsive-layouts) - This helped me really get a grasp with responsive layouts. If anyone out there wants to upgrade their css knowledge I HIGHLY recommended this course. 
 
 
 ## Author
 
-- Website - [Add your name here](https://www.tylerfrenchtech.com)
+- Website - [My Portolio website](https://www.tylerfrenchtech.com)
 - Frontend Mentor - [@Drrecommended](https://www.frontendmentor.io/profile/Drrecommended)
 - Twitter - [@drrecommendedTF](https://twitter.com/drrecommendedTF)
 
