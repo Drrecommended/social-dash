@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://drrecommended.github.io/social-dash/)
+- Solution URL: [Link to solution](https://drrecommended.github.io/social-dash/)
 
 ### Built with
 
