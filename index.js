@@ -1,4 +1,5 @@
-document.querySelector("[data-switch-dark]").addEventListener("click", function () {
-    console.log("test")
+document
+  .querySelector("[data-switch-dark]")
+  .addEventListener("click", function () {
     document.body.classList.toggle("dark");
   });
