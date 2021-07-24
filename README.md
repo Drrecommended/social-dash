@@ -1,7 +1,7 @@
 # Frontend Mentor - Social media dashboard with theme switcher
 
-![Design preview for the Social media dashboard with theme switcher coding challenge](./design/darkmode.png)(./design/lightmode.png)
-
+![Design preview for the Social media dashboard with theme switcher coding challenge](./design/darkmode.png)
+![Design preview for the Social media dashboard with theme switcher coding challenge](./design/lightmode.png)
 ## Welcome! 👋git 
 
 Thanks for checking out this front-end coding challenge.
