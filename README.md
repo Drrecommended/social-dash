@@ -2,6 +2,8 @@
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/darkmode.png)
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/lightmode.png)
+
+- Solution URL: [Add solution URL here](https://drrecommended.github.io/social-dash/)
 ## Welcome! 👋git 
 
 Thanks for checking out this front-end coding challenge.
