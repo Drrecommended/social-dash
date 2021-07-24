@@ -25,23 +25,23 @@
 
   <body>
     <!-- Header -->
-    <header class="header">
+    <header role="header with theme switch" class="header">
       <div class="header-container">
         <h2 class="headline">Social Media Dashboard</h2>
         <p class="dash">Total Followers: 23,004</p>
         <div class="line"></div>
         <div class="theme-switch">
           <p class="dark__mode">Dark Mode</p>
-          <label class="switch">
-            <input type="checkbox" name="mode" data-switch-dark />
+          <label for="theme-switch" class="switch">
+            <input id="theme-switch" type="checkbox" name="mode" data-switch-dark />
             <span class="slider round"></span>
           </label>
         </div>
       </div>
     </header>
     <!-- contiainer for big cards-->
-    <section class="content">
-      <div class="flex">
+    <main class="content">
+      <section class="flex">
         <div class="big-card facebook card">
           <div class="social-tag">
             <img src="/images/icon-facebook.svg" alt="" />
@@ -90,12 +90,12 @@
             144 Today
           </div>
         </div>
-      </div>
+      </section>
       <!--Sub Header-->
-      <h3 class="sub__header">Overview - Today</h3>
+      <h2 class="sub__header">Overview - Today</h2>
 
       <!--Sub Section-->
-      <div class="flex">
+      <section class="flex">
         <div class="small-card card">
           <div class="top container">
             <p class="title">Page Views</p>
@@ -200,15 +200,15 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <!--Sub Header-->
 
-    <div class="attribution" style="font-size: 10px">
+    <footer class="attribution" style="font-size: 10px">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="wwww.tylerfrench.tech">Tyler French</a>.
-    </div>
+    </footer>
   </body>
 </html>

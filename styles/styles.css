@@ -79,6 +79,7 @@ hr {
 .sub__header {
   color: var(--sub__header-color);
   padding: 1em 0;
+  font-size: 20px;
 }
 
 .content {
